@@ -55,3 +55,8 @@ function isPalindrome(string) {
     return reverse === string;
 
 }
+
+let string = "nitin"
+console.log(firstNonrepeatingChar(string));
+console.log(removeDuplicates(string));
+console.log(isPalindrome(string));
