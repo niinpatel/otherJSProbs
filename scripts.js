@@ -56,7 +56,7 @@ function isPalindrome(string) {
 
 }
 
-let string = "nitin"
+let string = "nitin";
 console.log(firstNonrepeatingChar(string));
 console.log(removeDuplicates(string));
 console.log(isPalindrome(string));
