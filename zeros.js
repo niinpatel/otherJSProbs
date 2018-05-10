@@ -1,22 +1,30 @@
 /**
- * Returns the number of zeros between 0 and 100.
+ * Returns the number of zeros in 0 to n.
  * @returns {number}
  */
-function zerosOneToHundred() {
+function zerosOneToHundred(n) {
 
     let zeros = 1;
 
-    for(let i = 1; i <= 100; i++){
-        if(i%100 === 0){
-            zeros += 2;
+    let j;
+    for (let i = 1; i <= n; i++) {
+
+        j = i;
+        while (j !== 0) {
+            if (j % 10 === 0) {
+                zeros++;
+            }
+            j = Math.floor(j / 10);
         }
-        else if(i%10 === 0){
-            zeros++;
-        }
+
     }
 
     return zeros;
 
 }
 
-console.log(zerosOneToHundred());
+console.log(zerosOneToHundred(100));  // returns 9
+
+console.log(zerosOneToHundred(200));  // returns 32
+
+console.log(zerosOneToHundred(1000)); // returns 189
