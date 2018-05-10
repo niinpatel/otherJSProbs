@@ -2,7 +2,7 @@
  * Returns the number of zeros in 0 to n.
  * @returns {number}
  */
-function zerosOneToHundred(n) {
+function numberOfZeros(n) {
 
     let zeros = 1;
 
@@ -23,8 +23,8 @@ function zerosOneToHundred(n) {
 
 }
 
-console.log(zerosOneToHundred(100));  // returns 9
+console.log(numberOfZeros(100));  // returns 9
 
-console.log(zerosOneToHundred(200));  // returns 32
+console.log(numberOfZeros(200));  // returns 32
 
-console.log(zerosOneToHundred(1000)); // returns 189
+console.log(numberOfZeros(1000)); // returns 189
